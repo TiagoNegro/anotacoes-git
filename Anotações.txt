@@ -1,0 +1,72 @@
+Utilizador para o git
+git
+
+Setar nome
+git config --global user.name "nome do usuario"
+
+Setar e-mail
+git config --global user.email "seuemail@email.com"
+
+Setar editor
+git --global core.editor "nome editor"
+
+Buscar o nome do usuario da mauqina
+git config user.name
+
+Buscar o email
+git config user.email
+
+Buscar todas as configurações
+git config --list
+
+
+
+
+Iniciar o repositorio
+git init
+
+Verificar status dos arquivos
+git status
+
+Adicionar arquivo para ser "commit"
+git add <file> ou git add -A (para todos)
+
+"commit" o arquivo
+git commit -m "O commit"
+
+Adicionar arquivo e fazer "commit"
+git commit -am "o que foi feito"
+
+Ver todos os commit gerados
+git log
+
+
+Reverter alterações
+git reset --soft numero do commit
+git reset --soft(volta ao estado requerido com as modificações futuras já preparadas)
+	  --mixed(mesmo que o soft mas não prepara as modificações futuras)
+	  --hard(ignora todas as modificações feitas e volta para o estado requerido)
+ex.:
+git rest --soft 24ff5bc0e279f8276f9211936e9cd81b751be94b
+
+
+Criando branch
+git branch nome do branch
+
+Verificar qual branch você está (* <- indica qual branch você está)
+git branch 
+
+Mudar de branch
+git checkout nome do branch
+
+Remover branch remoto
+git push origin :nome do branch
+
+Remover branch local
+git branch -D nome do branch
+
+Verifica diferenças entre arquivos
+git diff
+
+
+
